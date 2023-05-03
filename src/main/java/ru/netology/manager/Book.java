@@ -1,4 +1,5 @@
 package ru.netology.manager;
+
 public class Book extends Product {
     private String author;
     private String test;

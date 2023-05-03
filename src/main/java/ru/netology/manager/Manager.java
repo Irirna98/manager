@@ -1,4 +1,5 @@
 package ru.netology.manager;
+
 public class Manager {
     private Repository repository;
 
@@ -25,6 +26,7 @@ public class Manager {
         }
         return result;
     }
+
     public boolean matches(Product product, String search) {
         if (product.getName().contains(search)) {
             return true;

@@ -1,6 +1,6 @@
 package ru.netology.manager;
-public class Smartphone extends Product {
 
+public class Smartphone extends Product {
 
 
     private String vendor;

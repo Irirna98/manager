@@ -1,4 +1,5 @@
 package ru.netology.manager;
+
 public class Repository {
     private Product[] products = new Product[0];
 
@@ -18,7 +19,7 @@ public class Repository {
 
     public void removeById(int removeId) {
         Product removeProduct = findById(removeId);
-        if (removeProduct == null){
+        if (removeProduct == null) {
             throw new NotFoundException(removeId);
         }
         Product[] tmp = new Product[products.length - 1];
@@ -31,6 +32,7 @@ public class Repository {
         }
         products = tmp;
     }
+
     public Product findById(int id) {
         for (Product product : products) {
             if (product.getId() == id) {
