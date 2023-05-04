@@ -26,7 +26,7 @@ public class ManagerTest {
     }
 
     @Test
-    public void shouldSearchOneBook() {
+    public void thereAreSeveralProducts() {
         Repository repo = new Repository();
         Manager manager = new Manager(repo);
 
@@ -61,15 +61,15 @@ public class ManagerTest {
         manager.add(book3);
         manager.add(phone1);
 
-        Product[] actual = manager.searchBy("");
-        Product[] expected = {book1, book2, book3, phone1};
+        Product[] actual = manager.searchBy("0");
+        Product[] expected = {};
 
         Assertions.assertArrayEquals(expected, actual);
 
     }
 
     @Test
-    public void thereIsExactlyOneItem() {
+    public void thereIsExactlyOneProduct() {
         Repository repo = new Repository();
         Manager manager = new Manager(repo);
 
